@@ -1,0 +1,5 @@
+<launch>
+	<rosparam file="$(find client_interface)/config/configuration.yaml" command="load"/>
+    <rosparam file="$(find cam_viewer)/config/configuration.yaml" command="load"/>
+    <node name="cam_viewer_node_1" pkg="cam_viewer" type="cam_viewer_node" output="screen" args="1"/>
+</launch>

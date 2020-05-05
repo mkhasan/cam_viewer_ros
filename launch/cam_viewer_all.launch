@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find cam_viewer)/launch/cam_viewer_1.launch" />
+	<include file="$(find cam_viewer)/launch/cam_viewer_2.launch" />
+		
+</launch>

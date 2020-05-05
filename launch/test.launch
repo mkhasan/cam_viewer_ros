@@ -1,0 +1,6 @@
+<launch>
+    <rosparam file="$(find cam_viewer)/config/configuration.yaml" command="load"/>
+    <node name="cam_viewer_node" pkg="cam_viewer" type="cam_viewer_node" output="screen" 
+    launch-prefix="xterm -e gdb --args" /> 
+</launch>
+
